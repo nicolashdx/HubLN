@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Home from './home.jsx';
-import NSG from './nsg.jsx'
+import Home from './Home.jsx';
+import NSG from './NSG.jsx'
 import GradePlanner from './gradeplanner.jsx';
 
 import './index.css';
