@@ -1,13 +1,14 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+import Navbar from './navbar';
 
 function GradePlanner() {
   return (
     <>
       <div className='container'>
         <p>Montar Grade</p>
+        <Navbar />
       </div>
     </>
   )
