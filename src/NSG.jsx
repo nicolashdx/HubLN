@@ -9,13 +9,14 @@ function NSG() {
   return (
     <>
     <div className='retangulo'></div>
+    <div className='organizar'>
         <div className='contentNsg'>
           <p className='titulo'>Cálculo de NSG</p>
           <div className='indiv'>
             <p>Carga Horária:</p>
-            <input type="text" placeholder='60' />
+            <input type="number" placeholder='Ex: 60'/>
             <p>Nota:</p>
-            <input type="text" placeholder='75'/>
+            <input type="number" placeholder='Ex: 75'/>
             <button>+</button>
           </div>
           <div>
@@ -39,6 +40,7 @@ function NSG() {
             <p className='nsgResult'></p>
             <p>Conceito:</p>
             <p className='conceitoResult'></p>
+          </div>
           </div>
           <Navbar className="navbar"/>
         </div>

@@ -1,20 +1,36 @@
 
 .contentNsg { 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.4); /*background color white com opacity 40%*/
     border-radius: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
     /*height: 100%;*/
     width: 100%;
+    justify-content: center;
 }
 .contentNsg >*{ /* opacidade dos elementos do container*/
     opacity: 1 ;
 }
 
+.organizar{
+    display: flex;
+    flex-direction: row;
+}
+
 .titulo{
   font-size:50px ;
   font-weight: 800;
+}
+
+input{
+    background-color: rgba(11, 108, 255, 0.5);
+    border-radius: 50px;
+    border-color: transparent;
+    width: 20%;
+}
+input::placeholder{
+    color: #fff;
 }
 
 
@@ -28,6 +44,10 @@
 
 .navbar{
     margin: 0;
+}
+
+.listDiscp{
+    background-color: black;
 }
 
 li{
