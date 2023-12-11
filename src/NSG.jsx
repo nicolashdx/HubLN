@@ -10,7 +10,7 @@ function NSG() {
     <>
     <div className='retangulo'></div>
         <div className='contentNsg'>
-          <p>CALCULO DE NSG</p>
+          <p>CÁLCULO DE NSG</p>
           <div className='indiv'>
             <p>Carga Horária:</p>
             <input type="text" placeholder='60' />
