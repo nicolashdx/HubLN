@@ -13,9 +13,9 @@ function Home() {
             <p>Esse projeto foi realizado pelo G3E com o intuito de ajudar nós meros estudantes.</p>
         </div>
         <div className='buttons'>
-            <button><Link to="/nsg">Cálculo de NSG</Link></button>
-            <button><Link to="/grade">Montar Grade</Link></button>
-            <button>Em breve</button>
+            <Link to="/nsg"><button>Cálculo de NSG</button></Link>
+            <Link to="/grade"><button>Montar Grade</button></Link>
+            <Link to="/"><button>Em breve</button></Link>
         </div>
         </div>
       </div>
