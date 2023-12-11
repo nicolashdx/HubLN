@@ -8,6 +8,7 @@ import './nsg.css'
 function NSG() {
   return (
     <>
+    <div className='retangulo'></div>
         <div className='contentNsg'>
           <p>CALCULO DE NSG</p>
           <div className='indiv'>
