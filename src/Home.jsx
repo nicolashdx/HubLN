@@ -8,7 +8,7 @@ function Home() {
     <>
       <div className='container'>
         <div>
-            <p className='welcome'>BEM VINDX!</p>
+            <p className='welcome'>BEM <br></br> VINDE!</p>
             <p>Esse projeto foi realizado pelo G3E com o intuito de ajudar nós meros estudantes.</p>
         </div>
         <div className='buttons'>
