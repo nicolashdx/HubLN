@@ -29,7 +29,7 @@
     color: #0b6cff;
     opacity: 0.8;
     margin-left: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-right:10% ;
 
 }
@@ -45,4 +45,15 @@
     padding: 6%;
     margin-right: 5%;
     margin-top: 5%;
+}
+
+.linksDiv{
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.links{
+    font-size: 40px;
+    color: #0b6cff;
+    margin-right: 7%;
 }
