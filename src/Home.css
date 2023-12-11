@@ -21,16 +21,16 @@
     font-weight: 900;
     color: #007bff; 
     margin-left: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
 
 .buttons{
     display: flex;
     flex-direction: column;
-    width:50%;
-    height:4%;
     color: #0b6cff;
     opacity:0.75;
     padding: 6%;
     margin-right: 8%;
+    margin-top: 5%;
 }
