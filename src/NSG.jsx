@@ -9,7 +9,7 @@ function NSG() {
   return (
     <>
       <div className='container'>
-        <div className='content'>
+        <div className='contentNsg'>
           <p>CALCULO DE NSG</p>
           <div className='indiv'>
             <p>Carga Horária:</p>
