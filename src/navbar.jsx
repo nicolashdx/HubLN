@@ -5,7 +5,7 @@ import './navbar.css'
 
 function Navbar() {
   return (
-    <nav>
+    <nav className='navbar'>
       <ul>
         <li>
           <Link to="/"><img src="src\assets\arrow.svg" alt="Descrição da Imagem" /></Link>
