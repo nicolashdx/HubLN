@@ -10,6 +10,11 @@
     width: 100%;
 }
 
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
 /* Em seu arquivo CSS correspondente */
 .welcome {
     font-size: 70px;

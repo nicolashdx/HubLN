@@ -7,6 +7,7 @@ function Home() {
   return (
     <>
       <div className='container'>
+        <div className='content'>
         <div>
             <p className='welcome'>BEM <br></br> VINDE!</p>
             <p>Esse projeto foi realizado pelo G3E com o intuito de ajudar nós meros estudantes.</p>
@@ -15,6 +16,7 @@ function Home() {
             <button><Link to="/nsg">Cálculo de NSG</Link></button>
             <button><Link to="/grade">Montar Grade</Link></button>
             <button>Em breve</button>
+        </div>
         </div>
       </div>
     </>
