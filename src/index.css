@@ -30,11 +30,9 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   place-items: center;
-  min-width: 1000px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -52,7 +50,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  
+  height: 60%;
+  width: 100%;
   cursor: pointer;
   transition: border-color 0.25s;
 
@@ -60,7 +59,7 @@ button {
   margin-right: 10%;
 }
 button:hover {
-  border-color: #FFFFFF;
+  border-color: #fff0bc;
 }
 button:focus,
 button:focus-visible {

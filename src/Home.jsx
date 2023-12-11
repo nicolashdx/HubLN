@@ -10,7 +10,7 @@ function Home() {
         <div className='content'>
         <div>
             <p className='welcome'>BEM <br></br> VINDE!</p>
-            <p>Esse projeto foi realizado pelo G3E com o intuito de ajudar nós meros estudantes.</p>
+            <p className= 'textintro'>Esse projeto foi realizado pelo G3E com o intuito de ajudar nós meros estudantes.(texto a se discutir)</p>
         </div>
         <div className='buttons'>
             <Link to="/nsg"><button>Cálculo de NSG</button></Link>
