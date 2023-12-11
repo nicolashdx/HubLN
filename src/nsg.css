@@ -1,8 +1,19 @@
 
 .content {
     padding: 20px;
+    flex-direction: column;
+}
+
+.indiv{
+    display: flex;
+    flex-direction: row;
 }
 
 .navbar{
     margin: 0;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
 }

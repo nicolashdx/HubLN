@@ -11,7 +11,7 @@ function NSG() {
       <div className='container'>
         <div className='content'>
           <p>CALCULO DE NSG</p>
-          <div>
+          <div className='indiv'>
             <p>Carga Horária:</p>
             <input type="text" placeholder='60' />
             <p>Nota:</p>
@@ -19,7 +19,7 @@ function NSG() {
             <button>+</button>
           </div>
           <div>
-            <ul>
+            <ul className='listDiscp'>
               <li>
                 <p>1</p>
                 <p>60h</p>
@@ -34,7 +34,7 @@ function NSG() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='indiv'>
             <p>NSG:</p>
             <p className='nsgResult'></p>
             <p>Conceito:</p>
