@@ -3,11 +3,13 @@ import React from 'react';
 
 import Navbar from './navbar';
 
+import './nsg.css'
+
 function NSG() {
   return (
     <>
       <div className='container'>
-        <div>
+        <div className='content'>
           <p>CALCULO DE NSG</p>
           <div>
             <p>Carga Horária:</p>
@@ -40,7 +42,7 @@ function NSG() {
           </div>
         </div>
         
-        <Navbar />
+        <Navbar className="navbar"/>
       </div>
       
     </>
