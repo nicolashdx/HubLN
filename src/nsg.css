@@ -2,13 +2,13 @@
 .contentNsg { 
     display: flex;
     flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.4); /*background color white com opacity 40%*/
     border-radius: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
     /*height: 100%;*/
     width: 100%;
 }
-.contentNsg >*{
+.contentNsg >*{ /* opacidade dos elementos do container*/
     opacity: 1 ;
 }
 
