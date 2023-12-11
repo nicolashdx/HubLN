@@ -3,16 +3,15 @@ import React from 'react';
 
 import Navbar from './navbar';
 
-function NSG() {
+function GradePlanner() {
   return (
     <>
       <div className='container'>
-        <p>CALCULO DE NSG</p>
+        <p>Montar Grade</p>
         <Navbar />
       </div>
-      
     </>
   )
 }
 
-export default NSG
+export default GradePlanner

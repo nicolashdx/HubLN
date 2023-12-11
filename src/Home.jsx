@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './Home.css'
+import './home.css'
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
         </div>
         <div className='buttons'>
             <button><Link to="/nsg">Cálculo de NSG</Link></button>
-            <button>Montar Grade</button>
+            <button><Link to="/grade">Montar Grade</Link></button>
             <button>Em breve</button>
         </div>
       </div>
