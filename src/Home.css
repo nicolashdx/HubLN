@@ -15,7 +15,6 @@
 .buttons{
     display: flex;
     flex-direction: column;
-
     color: #0b6cff;
     opacity:0.75;
 }
