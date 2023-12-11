@@ -30,6 +30,9 @@
     flex-direction: column;
     color: #0b6cff;
     opacity:0.75;
+    width: 50%;
+    height: 100%;
+
     padding: 6%;
     margin-right: 8%;
     margin-top: 5%;
