@@ -11,7 +11,7 @@ function Navbar() {
         </li>
         <li>
           <a href="https://www.instagram.com/zeus.g3e/" target="_blank">
-            <img src="/instagram.svg" alt="Perfil do G3E no Instagram" />
+            <img src="src\assets\instagram.svg" alt="Perfil do G3E no Instagram" />
           </a>
         </li>
         <li>
