@@ -12,6 +12,12 @@
     opacity: 1 ;
 }
 
+.titulo{
+  font-size:50px ;
+  font-weight: 800;
+}
+
+
 .indiv{
     display: flex;
     flex-direction: row;
