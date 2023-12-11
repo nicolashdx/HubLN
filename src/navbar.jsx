@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import { GoArrowLeft, IoChatbubble  } from "react-icons/go";
+
+import './navbar.css'
 
 function Navbar() {
   return (
-    <nav>
+    <nav className='navbar'>
       <ul>
         <li>
           <Link to="/"><img src="src\assets\arrow.svg" alt="Descrição da Imagem" /></Link>
