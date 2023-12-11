@@ -9,7 +9,7 @@ function Home() {
       <div className='container'>
         <div className='content'>
         <div>
-            <p className='welcome'>BEM <br></br> VINDE!</p>
+            <p className='welcome'>BEM <br></br> VINDES!</p>
             <p className= 'textintro'>Esse projeto foi realizado pelo G3E com o intuito de ajudar nós meros estudantes.(texto a se discutir)</p>
             <div className='links'>
               <a href="https://www.instagram.com/zeus.g3e/" target="_blank">

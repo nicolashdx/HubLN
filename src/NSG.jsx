@@ -8,7 +8,6 @@ import './nsg.css'
 function NSG() {
   return (
     <>
-      <div className='container'>
         <div className='contentNsg'>
           <p>CALCULO DE NSG</p>
           <div className='indiv'>
@@ -40,10 +39,10 @@ function NSG() {
             <p>Conceito:</p>
             <p className='conceitoResult'></p>
           </div>
+          <Navbar className="navbar"/>
         </div>
         
-        <Navbar className="navbar"/>
-      </div>
+        
       
     </>
   )
