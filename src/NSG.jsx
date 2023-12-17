@@ -3,6 +3,9 @@ import React from 'react';
 
 import Navbar from './navbar';
 
+import { CiCircleRemove } from "react-icons/ci";
+
+
 import './nsg.css'
 
 function NSG() {
@@ -25,13 +28,13 @@ function NSG() {
                 <p>1</p>
                 <p>60h</p>
                 <p>82</p>
-                <button>x</button>
+                <button><CiCircleRemove /></button>
               </li>
               <li>
                 <p>2</p>
                 <p>30h</p>
                 <p>100</p>
-                <button>x</button>
+                <button><CiCircleRemove /></button>
               </li>
             </ul>
           </div>

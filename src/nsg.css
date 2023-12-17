@@ -1,13 +1,15 @@
-
 .contentNsg { 
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.4); /*background color white com opacity 40%*/
     border-radius: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
-    /*height: 100%;*/
+    height: 100%;
     width: 100%;
     justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .contentNsg >*{ /* opacidade dos elementos do container*/
     opacity: 1 ;
@@ -21,6 +23,9 @@
 .titulo{
   font-size:50px ;
   font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 5%;
+  margin-inline: 250px;
 }
 
 input{
@@ -33,13 +38,25 @@ input::placeholder{
     color: #fff;
 }
 
-
 .indiv{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     opacity: 1.6;
+    padding-inline: 5%;
+    margin-bottom: 5%;
+    margin-inline: 15%;
+}
 
+.indiv >p{
+    height: fit-content;
+}
 
+.indiv>button{
+    width: 13%;
+    height: min-content;
+    padding: 3%;
+    margin: 0;
 }
 
 .navbar{
@@ -47,10 +64,48 @@ input::placeholder{
 }
 
 .listDiscp{
-    background-color: black;
+    background-color: rgba(11, 108, 255, 0.5);
+    margin-inline: 27%;
+    padding: 24px;
+    border-radius: 35px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    max-height: 250px;
+
 }
 
-li{
+li{ 
+    padding-inline: 8%;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+}
+
+li > button{
+    width: min-content;
+    height: min-content;
+    padding: 3%;
+    margin: 0;
+    font-size: 30px;
+    
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+li > button:hover{
+    color: rgba(255, 0, 0, 0.8);
+}
+
+li > button:focus,
+li > button:focus-visible{
+    outline: 0px
 }
