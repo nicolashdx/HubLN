@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { createElement, useState } from 'react';
 
 import Navbar from './navbar';
 
@@ -9,6 +9,26 @@ import { CiCircleRemove } from "react-icons/ci";
 import './nsg.css'
 
 function NSG() {
+  const [quant_discp, set_quant_discp] = useState(1)
+  
+  const add_discp = () => {
+    const ch = document.createElement('p');
+    ch.textContent = `${document.getElementsByClassName('ch')[0].value}H`
+
+    const nota = document.createElement('p');
+    nota.textContent = `${document.getElementsByClassName('nota')[0].value}`
+
+    var item = document.createElement('li');
+    item.appendChild(document.createTextNode(`${quant_discp}`));
+    item.appendChild(ch);
+    item.appendChild(nota);
+
+    var list = document.getElementsByClassName('listDiscp')[0];
+    list.appendChild(item);
+    
+    set_quant_discp(quant_discp + 1);
+  }
+
   return (
     <>
     <div className='retangulo'></div>
@@ -17,10 +37,10 @@ function NSG() {
           <p className='titulo'>Cálculo de NSG</p>
           <div className='indiv'>
             <p>Carga Horária:</p>
-            <input type="number" placeholder='Ex: 60'/>
+            <input className='ch' type="number" placeholder='Ex: 60'/>
             <p>Nota:</p>
-            <input type="number" placeholder='Ex: 75'/>
-            <button>+</button>
+            <input className='nota' type="number" placeholder='Ex: 75'/>
+            <button onClick={add_discp}>+</button>
           </div>
           <div>
             <ul className='listDiscp'>
