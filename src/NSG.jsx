@@ -1,5 +1,5 @@
 
-import React, { createElement, useState } from 'react';
+import React, { createElement, appendChild, useState } from 'react';
 
 import Navbar from './navbar';
 
@@ -18,13 +18,21 @@ function NSG() {
     const nota = document.createElement('p');
     nota.textContent = `${document.getElementsByClassName('nota')[0].value}`
 
+    const btn = document.createElement('button');
+    btn.innerText = "X"
+    btn.classList.add('remove')
+
     var item = document.createElement('li');
     item.appendChild(document.createTextNode(`${quant_discp}`));
     item.appendChild(ch);
     item.appendChild(nota);
+    item.appendChild(btn);
 
     var list = document.getElementsByClassName('listDiscp')[0];
     list.appendChild(item);
+
+    document.getElementsByClassName('ch')[0].value = ''
+    document.getElementsByClassName('nota')[0].value = ''
     
     set_quant_discp(quant_discp + 1);
   }
@@ -44,18 +52,6 @@ function NSG() {
           </div>
           <div>
             <ul className='listDiscp'>
-              <li>
-                <p>1</p>
-                <p>60h</p>
-                <p>82</p>
-                <button><CiCircleRemove /></button>
-              </li>
-              <li>
-                <p>2</p>
-                <p>30h</p>
-                <p>100</p>
-                <button><CiCircleRemove /></button>
-              </li>
             </ul>
           </div>
           <div className='indiv'>
