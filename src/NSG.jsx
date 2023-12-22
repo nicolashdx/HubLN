@@ -1,31 +1,55 @@
 
-import React, { createElement, appendChild, useState } from 'react';
+import React, { useState } from 'react';
 
 import Navbar from './navbar';
 
 import { CiCircleRemove } from "react-icons/ci";
-
 
 import './nsg.css'
 
 function NSG() {
   const [disciplinas, set_disciplinas] = useState([]);
   const [nsg_value, set_nsg_value] = useState(0);
+  const [conceito_value, set_conceito_value] = useState('F')
   
-  const calc_nsg = () => {
+  const calc_nsg = (disciplinas) => {
+    if(disciplinas.length === 0){
+      set_nsg_value(0);
+      set_conceito_value('F');
+      return;
+    }
+    
     var soma = 0;
     var peso = 0;
     for(var i=0; i < disciplinas.length; i++){
       const item = disciplinas[i];
       const nota = parseFloat(item.nota);
       const ch = parseFloat(item.carga_horaria);
-      console.log(`Nota: ${nota} CH: ${ch}`)
       soma += nota*ch;
       peso += ch;
-      
     }
-    console.log(`Soma: ${soma} Peso: ${peso} NSG: ${(peso != 0) ? soma/peso : 0}`)
-    set_nsg_value(soma/peso)
+    const parcial = soma/peso
+
+    set_nsg_value(parcial)
+
+    if(parcial >= 90){
+      set_conceito_value('A')
+    }
+    else if(parcial >= 80 && parcial < 90){
+      set_conceito_value('B')
+    }
+    else if(parcial >= 70 && parcial < 80){
+      set_conceito_value('C')
+    }
+    else if(parcial >= 60 && parcial < 70){
+      set_conceito_value('D')
+    }
+    else if(parcial >= 40 && parcial < 60){
+      set_conceito_value('E')
+    }
+    else if(parcial >= 0 && parcial < 40){
+      set_conceito_value('F')
+    }
   }
 
   const add_disciplinas = () => {
@@ -33,17 +57,28 @@ function NSG() {
     const nota_value = parseInt(document.getElementsByClassName('nota_input')[0].value);
 
     if(!nota_value || nota_value < 0 || nota_value > 100){
+      document.getElementsByClassName('nota_input')[0].value = '';
       window.alert("Valor de nota inválido.\nNota deve ser um valor entre 0 e 100.")
       return;
     }
 
-    disciplinas.push({carga_horaria: ch_value, nota: nota_value})
+    const att_disciplinas = [...disciplinas, {carga_horaria: ch_value, nota: nota_value}];
+
+    set_disciplinas(att_disciplinas);
 
     document.getElementsByClassName('ch_input')[0].value = 30;
     document.getElementsByClassName('nota_input')[0].value = '';
     
-    calc_nsg();
+    calc_nsg(att_disciplinas);
   }
+
+  const rm_disciplina = (index) => {
+    const att_disciplinas = [...disciplinas];
+    att_disciplinas.splice(index, 1);
+    set_disciplinas(att_disciplinas);
+
+    calc_nsg(att_disciplinas)
+  };
 
   return (
     <>
@@ -70,7 +105,7 @@ function NSG() {
                 <p>{index+1}</p>
                 <p>{item.carga_horaria}H</p>
                 <p>{item.nota}</p>
-                <button><CiCircleRemove /></button>
+                <button onClick={index => rm_disciplina(index)}><CiCircleRemove /></button>
               </li>
             ))}
             </ul>
@@ -79,7 +114,7 @@ function NSG() {
             <p>NSG:</p>
             <p className='nsgResult'>{parseFloat(nsg_value.toFixed(2))}</p>
             <p>Conceito:</p>
-            <p className='conceitoResult'></p>
+            <p className='conceitoResult'>{conceito_value}</p>
           </div>
           </div>
           <Navbar className="navbar"/>
