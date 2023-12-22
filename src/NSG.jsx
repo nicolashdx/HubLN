@@ -14,7 +14,7 @@ function NSG() {
   const add_discp = () => {
     const nota_value = document.getElementsByClassName('nota_input')[0].value
     if (!nota_value || nota_value < 0 || nota_value > 100){
-      console.log("Valor de nota inválido.")
+      window.alert("Valor de nota inválido.\nO campo deve conter um valor de nota entre 0 e 100.")
       return;
     }
      
