@@ -9,40 +9,40 @@ import { CiCircleRemove } from "react-icons/ci";
 import './nsg.css'
 
 function NSG() {
-  const [quant_discp, set_quant_discp] = useState(1)
+  const [disciplinas, set_disciplinas] = useState([]);
+  const [nsg_value, set_nsg_value] = useState(0);
   
-  const add_discp = () => {
-    const nota_value = document.getElementsByClassName('nota_input')[0].value
-    if (!nota_value || nota_value < 0 || nota_value > 100){
-      window.alert("Valor de nota inválido.\nO campo deve conter um valor de nota entre 0 e 100.")
+  const calc_nsg = () => {
+    var soma = 0;
+    var peso = 0;
+    for(var i=0; i < disciplinas.length; i++){
+      const item = disciplinas[i];
+      const nota = parseFloat(item.nota);
+      const ch = parseFloat(item.carga_horaria);
+      console.log(`Nota: ${nota} CH: ${ch}`)
+      soma += nota*ch;
+      peso += ch;
+      
+    }
+    console.log(`Soma: ${soma} Peso: ${peso} NSG: ${(peso != 0) ? soma/peso : 0}`)
+    set_nsg_value(soma/peso)
+  }
+
+  const add_disciplinas = () => {
+    const ch_value = parseInt(document.getElementsByClassName('ch_input')[0].value);
+    const nota_value = parseInt(document.getElementsByClassName('nota_input')[0].value);
+
+    if(!nota_value || nota_value < 0 || nota_value > 100){
+      window.alert("Valor de nota inválido.\nNota deve ser um valor entre 0 e 100.")
       return;
     }
-     
-    const ch = document.createElement('p');
-    ch.textContent = `${document.getElementsByClassName('ch_input')[0].value}H`;
-    ch.className = 'ch'
 
-    const nota = document.createElement('p');
-    nota.textContent = `${nota_value}`;
-    nota.className = 'nota';
+    disciplinas.push({carga_horaria: ch_value, nota: nota_value})
 
-    const btn = document.createElement('button');
-    btn.innerText = "X"
-    btn.classList.add('remove')
-
-    var item = document.createElement('li');
-    item.appendChild(document.createTextNode(`${quant_discp}`));
-    item.appendChild(ch);
-    item.appendChild(nota);
-    item.appendChild(btn);
-
-    var list = document.getElementsByClassName('listDiscp')[0];
-    list.appendChild(item);
-
-    document.getElementsByClassName('ch_input')[0].value = '30'
-    document.getElementsByClassName('nota_input')[0].value = ''
+    document.getElementsByClassName('ch_input')[0].value = 30;
+    document.getElementsByClassName('nota_input')[0].value = '';
     
-    set_quant_discp(quant_discp + 1);
+    calc_nsg();
   }
 
   return (
@@ -61,15 +61,23 @@ function NSG() {
             </select>
             <p>Nota:</p>
             <input className='nota_input' type="number" placeholder='Ex: 75'/>
-            <button onClick={add_discp}>+</button>
+            <button onClick={add_disciplinas}>+</button>
           </div>
           <div>
-            <ul className='listDiscp'>
+            <ul className='listDiscp'> 
+            {disciplinas.map((item, index) => (
+              <li key={index}>
+                <p>{index+1}</p>
+                <p>{item.carga_horaria}H</p>
+                <p>{item.nota}</p>
+                <button><CiCircleRemove /></button>
+              </li>
+            ))}
             </ul>
           </div>
           <div className='indiv'>
             <p>NSG:</p>
-            <p className='nsgResult'></p>
+            <p className='nsgResult'>{parseFloat(nsg_value.toFixed(2))}</p>
             <p>Conceito:</p>
             <p className='conceitoResult'></p>
           </div>
