@@ -6,6 +6,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
     height: 100%;
     width: 100%;
+    max-width: 900px ;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
