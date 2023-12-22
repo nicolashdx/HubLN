@@ -1,8 +1,8 @@
 {
-  "name": "hubln",
   "homepage": "https://nicolashdx.github.io/HubLN",
-  "private": false,
-  "version": "1.0.0",
+  "name": "hubln",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
