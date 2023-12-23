@@ -2,8 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Home from './Home.jsx';
-import NSG from './NSG.jsx'
+import Home from './home.jsx';
+import NSG from './nsg.jsx'
 import GradePlanner from './gradeplanner.jsx';
 import Test from './test.jsx';
 

@@ -5,7 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 import { IoChatbubble } from "react-icons/io5";
 
-import './Home.css'
+import './home.css'
 
 function Home() {
   return (
