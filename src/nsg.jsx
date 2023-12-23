@@ -13,7 +13,9 @@ function NSG() {
   const [conceito_value, set_conceito_value] = useState('')
   
   const calc_nsg = () => {
-    if(disciplinas.length === 0){
+    if(disciplinas.length == 0){
+      set_nsg_value('');
+      set_conceito_value('');
       return;
     }
     
