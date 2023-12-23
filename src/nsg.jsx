@@ -12,7 +12,7 @@ function NSG() {
   const [nsg_value, set_nsg_value] = useState(0);
   const [conceito_value, set_conceito_value] = useState('F')
   
-  const calc_nsg = (disciplinas) => {
+  const calc_nsg = () => {
     if(disciplinas.length === 0){
       set_nsg_value(0);
       set_conceito_value('F');
@@ -53,11 +53,11 @@ function NSG() {
   }
 
   const add_disciplinas = () => {
-    const ch_value = parseInt(document.getElementsByClassName('ch_input')[0].value);
-    const nota_value = parseInt(document.getElementsByClassName('nota_input')[0].value);
+    const ch_value = parseInt(document.getElementById('ch_input').value);
+    const nota_value = parseInt(documentgetElementById('nota_input').value);
 
     if(!nota_value || nota_value < 0 || nota_value > 100){
-      document.getElementsByClassName('nota_input')[0].value = '';
+      documentgetElementById('nota_input').value = '';
       window.alert("Valor de nota inválido.\nNota deve ser um valor entre 0 e 100.")
       return;
     }
@@ -66,18 +66,14 @@ function NSG() {
 
     set_disciplinas(att_disciplinas);
 
-    document.getElementsByClassName('ch_input')[0].value = 30;
-    document.getElementsByClassName('nota_input')[0].value = '';
-    
-    //calc_nsg(att_disciplinas);
+    document.getElementById('ch_input').value = 30;
+    documentgetElementById('nota_input').value = '';
   }
 
   const rm_disciplina = (index) => {
     const att_disciplinas = [...disciplinas];
     att_disciplinas.splice(index, 1);
     set_disciplinas(att_disciplinas);
-
-    //calc_nsg(att_disciplinas)
   };
 
   useEffect(()=>{
@@ -92,14 +88,14 @@ function NSG() {
           <p className='titulo'>Cálculo de NSG</p>
           <div className='indiv'>
             <p>Carga Horária:</p>
-            <select className='ch_input'>
+            <select id='ch_input'>
               <option value="30">30 H</option>
               <option value="45">45 H</option>
               <option value="60">60 H</option>
               <option value="90">90 H</option>
             </select>
             <p>Nota:</p>
-            <input className='nota_input' type="number" placeholder='Ex: 75'/>
+            <input id='nota_input' type="number" placeholder='Ex: 75'/>
             <button onClick={add_disciplinas}>+</button>
           </div>
           <div>
