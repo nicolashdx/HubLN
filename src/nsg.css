@@ -22,10 +22,10 @@
 }
 
 .titulo{
-  font-size:54px ;
+  font-size:58px ;
   font-weight: 800;
   margin-top: 30px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   margin-left: 200px;
   margin-right: 140px;
 }
@@ -70,24 +70,29 @@ input:focus, input:focus-visible {
 .listDiscp{
     background-color: rgba(11, 108, 255, 0.5);
     margin-inline: 27%;
-    padding: 24px;
+    padding: 20px;
     border-radius: 35px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 50%;
-    max-height: 250px;
-
+    max-height: 112px;
+    overflow: auto;
 }
+.listDiscp::-webkit-scrollbar{
+    width: 9px;
+}
+.listDiscp::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the color of the track */
+  }
+
 
 li{ 
-    padding-inline: 8%;
+   /* padding-inline: 2%;*/
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-
     color: white;
-
 }
 
 li > button{
@@ -96,7 +101,6 @@ li > button{
     padding: 3%;
     margin: 0;
     font-size: 30px;
-    
     border: none;
     text-decoration: none;
     cursor: pointer;
