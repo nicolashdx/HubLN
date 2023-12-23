@@ -54,11 +54,16 @@ function NSG() {
 
   const add_disciplinas = () => {
     const ch_value = parseInt(document.getElementById('ch_input').value);
-    const nota_value = parseInt(documentgetElementById('nota_input').value);
+    const nota_value = parseInt(document.getElementById('nota_input').value);
 
     if(!nota_value || nota_value < 0 || nota_value > 100){
-      documentgetElementById('nota_input').value = '';
+      document.getElementById('nota_input').value = '';
       window.alert("Valor de nota inválido.\nNota deve ser um valor entre 0 e 100.")
+      return;
+    }
+
+    if(!ch_value){
+      window.alert("Selecione uma carga horária válida.")
       return;
     }
 
@@ -66,8 +71,8 @@ function NSG() {
 
     set_disciplinas(att_disciplinas);
 
-    document.getElementById('ch_input').value = 30;
-    documentgetElementById('nota_input').value = '';
+    document.getElementById('ch_input').value = '';
+    document.getElementById('nota_input').value = '';
   }
 
   const rm_disciplina = (index) => {
@@ -88,7 +93,8 @@ function NSG() {
           <p className='titulo'>Cálculo de NSG</p>
           <div className='indiv'>
             <p>Carga Horária:</p>
-            <select id='ch_input'>
+            <select id='ch_input' defaultValue={''}>
+              <option value="" disabled hidden>00 H</option>
               <option value="30">30 H</option>
               <option value="45">45 H</option>
               <option value="60">60 H</option>
