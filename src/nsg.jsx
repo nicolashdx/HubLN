@@ -76,8 +76,7 @@ function NSG() {
   }
 
   const rm_disciplina = (index) => {
-    const att_disciplinas = [...disciplinas];
-    att_disciplinas.splice(index, 1);
+    const att_disciplinas = [...disciplinas].splice(index, 1);
     set_disciplinas(att_disciplinas);
   };
 
