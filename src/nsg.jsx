@@ -9,13 +9,11 @@ import './nsg.css'
 
 function NSG() {
   const [disciplinas, set_disciplinas] = useState([]);
-  const [nsg_value, set_nsg_value] = useState(0);
-  const [conceito_value, set_conceito_value] = useState('F')
+  const [nsg_value, set_nsg_value] = useState('');
+  const [conceito_value, set_conceito_value] = useState('')
   
   const calc_nsg = () => {
     if(disciplinas.length === 0){
-      set_nsg_value(0);
-      set_conceito_value('F');
       return;
     }
     
@@ -76,7 +74,8 @@ function NSG() {
   }
 
   const rm_disciplina = (index) => {
-    const att_disciplinas = [...disciplinas].splice(index, 1);
+    const att_disciplinas = [...disciplinas];
+    att_disciplinas.splice(index, 1);
     set_disciplinas(att_disciplinas);
   };
 
@@ -117,16 +116,15 @@ function NSG() {
           </div>
           <div className='indiv'>
             <p>NSG:</p>
-            <p className='nsgResult'>{parseFloat(nsg_value.toFixed(2))}</p>
+            <p className='nsgResult'>{(nsg_value != '') ? parseFloat(nsg_value.toFixed(2)) : '-'}</p>
             <p>Conceito:</p>
-            <p className='conceitoResult'>{conceito_value}</p>
+            <p className='conceitoResult'>{(conceito_value != '') ? conceito_value : '-'}</p>
           </div>
           </div>
-          <Navbar className="navbar"/>
+          <div className="navbar">
+            <Navbar/>
+          </div>
         </div>
-        
-        
-      
     </>
   )
 }

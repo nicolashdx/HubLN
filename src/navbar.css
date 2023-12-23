@@ -1,15 +1,20 @@
 
-.navbar{
-    background-color: rgba(255, 255, 255, 0);
+nav{
+    display: flex;
+    background-color: rgba(11, 108, 255, 0.5);
     border-top-right-radius: 70px;
     border-bottom-right-radius: 70px;
-    /*font-size: 72px;*/
+    font-size: 32px;
+    height: 100%;
 }
 
-.navbar >*{
+nav > *{
     opacity: 1 ;
 }
 
-ul {
+.navigation {
     list-style-type: none;
+    margin: 0;
+    margin-top: 30px;
+    padding-inline: 20px;
 }

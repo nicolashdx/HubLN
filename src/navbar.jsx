@@ -8,8 +8,8 @@ import './navbar.css'
 
 function Navbar() {
   return (
-    <nav className='navbar'>
-      <ul>
+    <nav>
+      <ul className='navigation'>
         <li>
           <Link to="/">
             <FaArrowLeft />

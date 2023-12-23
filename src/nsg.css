@@ -1,16 +1,7 @@
 .contentNsg { 
     display: flexbox;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.4); /*background color white com opacity 40%*/
-    border-radius: 70px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
-    height: 100%;
-    width: 100%;
-    max-width: 900px ;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    
 }
 .contentNsg >*{ /* opacidade dos elementos do container*/
     opacity: 1 ;
@@ -19,6 +10,15 @@
 .organizar{
     display: flex;
     flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.4); /*background color white com opacity 40%*/
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
+    height: 100%;
+    width: 100%;
+    max-width: 900px ;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .titulo{
@@ -26,7 +26,8 @@
   font-weight: 800;
   margin-top: 30px;
   margin-bottom: 5%;
-  margin-inline: 250px;
+  margin-left: 200px;
+  margin-right: 140px;
 }
 
 input, select{
@@ -64,9 +65,7 @@ input:focus, input:focus-visible {
     margin: 0;
 }
 
-.navbar{
-    margin: 0;
-}
+
 
 .listDiscp{
     background-color: rgba(11, 108, 255, 0.5);
