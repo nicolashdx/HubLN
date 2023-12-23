@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Navbar from './navbar';
 
@@ -69,7 +69,7 @@ function NSG() {
     document.getElementsByClassName('ch_input')[0].value = 30;
     document.getElementsByClassName('nota_input')[0].value = '';
     
-    calc_nsg(att_disciplinas);
+    //calc_nsg(att_disciplinas);
   }
 
   const rm_disciplina = (index) => {
@@ -77,8 +77,12 @@ function NSG() {
     att_disciplinas.splice(index, 1);
     set_disciplinas(att_disciplinas);
 
-    calc_nsg(att_disciplinas)
+    //calc_nsg(att_disciplinas)
   };
+
+  useEffect(()=>{
+    calc_nsg()
+  }, [disciplinas])
 
   return (
     <>
