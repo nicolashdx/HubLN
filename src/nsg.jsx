@@ -56,14 +56,14 @@ function NSG() {
     const ch_value = parseInt(document.getElementById('ch_input').value);
     const nota_value = parseInt(document.getElementById('nota_input').value);
 
-    if(!nota_value || nota_value < 0 || nota_value > 100){
-      document.getElementById('nota_input').value = '';
-      window.alert("Valor de nota inválido.\nNota deve ser um valor entre 0 e 100.")
+    if(!ch_value){
+      window.alert("Selecione uma carga horária válida.")
       return;
     }
 
-    if(!ch_value){
-      window.alert("Selecione uma carga horária válida.")
+    if(!nota_value || nota_value < 0 || nota_value > 100){
+      document.getElementById('nota_input').value = '';
+      window.alert("Valor de nota inválido.\nNota deve ser um valor entre 0 e 100.")
       return;
     }
 
