@@ -10,7 +10,9 @@ import './home.css'
 function Home() {
   return (
     <>
-      <div className='container'>
+    <div className='absoluto'>
+   <div className = 'retangulo'></div>
+      <div className='container'> 
         <div className='content'>
         <div>
             <p className='welcome'>BEM <br></br> VINDOS!</p>
@@ -28,11 +30,12 @@ function Home() {
             </div>
         </div>
         <div className='buttons'>
-            <Link to="/nsg"><button>Cálculo de NSG</button></Link>
-            <Link to="/grade"><button>Montar Grade</button></Link>
+            <Link to="/nsg"onclick=><button>Cálculo de NSG</button></Link>
+            <Link to="/grade" onClick='enter'><button>Montar Grade</button></Link>
             <Link to="/test"><button>Em breve</button></Link>
         </div>
         </div>
+      </div>
       </div>
     </>
   )
