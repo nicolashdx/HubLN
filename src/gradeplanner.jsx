@@ -9,6 +9,7 @@ import './gradeplanner.css'
 function GradePlanner() {
   return (
     <>
+      <div className='retangulo_in'></div>
       <div className='container'>
         <p>Montar Grade</p>
         <Link to="/test"><p>Teste</p></Link>
