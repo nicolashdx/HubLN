@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import { FaGoogleDrive } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -8,10 +9,11 @@ import { IoChatbubble } from "react-icons/io5";
 import './home.css'
 
 function Home() {
+
   return (
     <>
     <div className='absoluto'>
-   <div className = 'retangulo'></div>
+    <div className='retangulo_out'></div>
       <div className='container'> 
         <div className='content'>
         <div>
@@ -30,8 +32,8 @@ function Home() {
             </div>
         </div>
         <div className='buttons'>
-            <Link to="/nsg"onclick=><button>Cálculo de NSG</button></Link>
-            <Link to="/grade" onClick='enter'><button>Montar Grade</button></Link>
+            <Link to="/nsg"><button>Cálculo de NSG</button></Link>
+            <Link to="/grade"><button>Montar Grade</button></Link>
             <Link to="/test"><button>Em breve</button></Link>
         </div>
         </div>

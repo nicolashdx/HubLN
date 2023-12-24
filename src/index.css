@@ -80,7 +80,7 @@ button:focus-visible {
   }
 }
 
-.retangulo{
+.retangulo_in{
   width: 22%;
   height: 100%;
   position:fixed;
@@ -92,11 +92,34 @@ button:focus-visible {
   animation-fill-mode: forwards;
   transform: translateX(0%);
 }
+
+.retangulo_out {
+  width: 22%;
+  height: 100%;
+  position:fixed;
+  right:0;
+  top:0;
+  background-color: #0b6cff;
+  animation-name: exit;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transform: translateX(100%);
+}
+
 @keyframes enter {
   0%{
     transform: translateX(100%);
   }
   100%{
     transform: translateX(0%);
+  }
+}
+
+@keyframes exit {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
   }
 }

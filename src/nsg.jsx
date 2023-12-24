@@ -87,7 +87,7 @@ function NSG() {
 
   return (
     <>
-    <div className='retangulo'></div>
+    <div className='retangulo_in'></div>
     <div className='organizar'>
         <div className='contentNsg'>
           <p className='titulo'>Cálculo de NSG</p>
