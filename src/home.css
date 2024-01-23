@@ -10,7 +10,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
     /*height: 100%;
     width min: 950px;*/
-    min-width: 950px;
+}@media(max-width: 1366px){
+    .container{min-width: 950px;}
 }
 
 .content{
