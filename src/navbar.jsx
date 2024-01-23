@@ -12,7 +12,9 @@ function Navbar() {
       <ul className='navigation'>
         <li>
           <Link to="/">
-            <FaArrowLeft />
+            <a className='icon' href="">
+              <FaArrowLeft />
+            </a>
           </Link>
         </li>
         <li>
