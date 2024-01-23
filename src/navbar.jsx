@@ -9,7 +9,7 @@ import './navbar.css'
 function Navbar() {
   return (
     <nav>
-      <ul className='navigation'>
+      <ul className='return'>
         <li>
           <Link to="/">
             <a className='icon' href="">
