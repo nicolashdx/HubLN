@@ -1,6 +1,6 @@
 
 nav{
-    display: flex;
+    display: flex-block;
     flex-direction: column;
     align-items: space-between;
     /*background-color: yellow;
@@ -28,7 +28,7 @@ nav > *{
 }
 
 .return {
-    
+    margin-bottom: 27vh;
 }
 
 a.icon {
