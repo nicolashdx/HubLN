@@ -8,8 +8,9 @@
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 70px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra do container */
-    /*height: 100%;*/
-    width: 950px;
+    /*height: 100%;
+    width min: 950px;*/
+    min-width: 950px;
 }
 
 .content{
