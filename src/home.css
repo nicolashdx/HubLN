@@ -11,7 +11,9 @@
     /*height: 100%;
     width min: 950px;*/
 }@media(max-width: 1366px){
-    .container{min-width: 950px;}
+    .container{
+        min-width: 950px;   
+         height:485.3px;}
 }
 
 .content{
