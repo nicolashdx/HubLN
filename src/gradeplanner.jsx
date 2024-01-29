@@ -13,6 +13,7 @@ function GradePlanner() {
       <div className='container'>
         <p>Montar Grade</p>
         <Link to="/test"><p>Teste</p></Link>
+        <></>
         <Navbar />
       </div>
     </>
