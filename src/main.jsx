@@ -13,11 +13,13 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(
   <Router basename='/HubLN'>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/nsg" element ={<NSG />} />
-      <Route path="/grade" element ={<GradePlanner />} />
-      <Route path="/test" element ={<Test />} />
-    </Routes>
+    <div className='euteamoliz'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/nsg" element ={<NSG />} />
+        <Route path="/grade" element ={<GradePlanner />} />
+        <Route path="/test" element ={<Test />} />
+      </Routes>
+    </div>
   </Router>
 );
