@@ -1,13 +1,17 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+
 .contentNsg { 
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     
 }
 .contentNsg >*{ /* opacidade dos elementos do container*/
     opacity: 1 ;
 }
-
-
 
 .titulo{
   font-size:58px ;

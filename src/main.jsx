@@ -13,6 +13,7 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(
   <Router basename='/HubLN'>
+    <div className="retangulo"></div>
     <div className='container'>
       <Routes>
         <Route path="/" element={<Home />} />

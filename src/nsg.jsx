@@ -85,9 +85,16 @@ function NSG() {
     calc_nsg()
   }, [disciplinas])
 
+  const retangulo_in = {
+    color: 'red',
+    fontSize: '16px',
+    // outros estilos
+  };
+
+
   return (
     <>
-    <div className='retangulo_in'></div>
+      <div className='content'>
         <div className='contentNsg'>
           <p className='titulo'>Cálculo de NSG</p>
           <div className='indiv'>
@@ -122,9 +129,10 @@ function NSG() {
             <p className='conceitoResult'>{(conceito_value != '') ? conceito_value : '-'}</p>
           </div>
           </div>
-          <div className="navbar">
+          <div>
             <Navbar/>
           </div>
+      </div>
     </>
   )
 }
