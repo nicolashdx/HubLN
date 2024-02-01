@@ -21,6 +21,25 @@
   overflow: hidden;
 }
 
+.container{
+  display: flex;
+  flex-direction: row;
+  position: fixed;/* container fixo possibilita o retagungulo existir*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.4); /*background color white com opacity 40%*/
+  border-radius: 70px;
+  box-shadow: 0 0 10px rgba(190, 165, 165, 0.3); /* Sombra do container */
+  justify-content: center;
+  min-width: 950px;
+ height: 508px;
+}@media (max-width:1366px){
+  .container{
+      min-width: 950px;   
+       min-height:485.3px;} 
+}
+
 a {
   font-weight: 500;
   color: #FFFFFF;
@@ -88,7 +107,7 @@ button:focus-visible {
   position:fixed;
   right:0;
   top:0;
-  background-color: #0b6cff;
+  background-color: rgba(11, 108, 255, .5);
   animation-name: enter;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -101,7 +120,7 @@ button:focus-visible {
   position:fixed;
   right:0;
   top:0;
-  background-color: #0b6cff;
+  background-color: rgba(11, 108, 255, .5);
   animation-name: exit;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;

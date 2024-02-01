@@ -11,7 +11,7 @@ function GradePlanner() {
   return (
     <>
       <div className='retangulo_in'></div>
-      <div className='container'>
+      <div className='contentGP'>
         <div className='upperparts'> 
           <input></input>
           <div className='inputbox'>

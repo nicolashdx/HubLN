@@ -12,10 +12,8 @@ function Home() {
 
   return (
     <>
-    <div className='absoluto'>
-    <div className='retangulo_out'></div>
-      <div className='container'> 
-        <div className='content'>
+      <div className='retangulo_out'></div>
+      <div className='content'>
         <div>
             <p className='welcome'>BEM <br></br> VINDOS!</p>
             <p className= 'textintro'>Esse projeto foi realizado pelo G3E com o intuito de ajudar nós meros estudantes.(texto a se discutir)</p>
@@ -36,8 +34,6 @@ function Home() {
             <Link to="/grade"><button>Montar Grade</button></Link>
             <Link to="/test"><button>Em breve</button></Link>
         </div>
-        </div>
-      </div>
       </div>
     </>
   )

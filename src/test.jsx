@@ -12,7 +12,7 @@ import './test.css'
 function Test() {
   return (
     <>
-      <div className='container'>
+      <div className='contentTest'>
         <p>Teste</p>
         
         <Calendar

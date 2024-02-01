@@ -88,7 +88,6 @@ function NSG() {
   return (
     <>
     <div className='retangulo_in'></div>
-    <div className='organizar'>
         <div className='contentNsg'>
           <p className='titulo'>Cálculo de NSG</p>
           <div className='indiv'>
@@ -126,7 +125,6 @@ function NSG() {
           <div className="navbar">
             <Navbar/>
           </div>
-        </div>
     </>
   )
 }

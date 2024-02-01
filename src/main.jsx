@@ -13,7 +13,7 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(
   <Router basename='/HubLN'>
-    <div className='euteamoliz'>
+    <div className='container'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nsg" element ={<NSG />} />
