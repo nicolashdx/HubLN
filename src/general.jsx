@@ -39,8 +39,8 @@ function General(){
         <div style={{display: ((sidebar) ? 'flex' : 'none')}}>
             <Navbar setNav={setsidebar}></Navbar>
         </div>
-        <div className="sidebar" style={(sidebar) ? rec_in : rec_out}></div>
         </div>
+        <div className="sidebar" style={(sidebar) ? rec_in : rec_out}></div>
       </Router>
       </>
     )
