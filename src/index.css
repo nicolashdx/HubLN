@@ -83,7 +83,7 @@ button:focus-visible {
 }
 
 .retangulo_in{
-  width: 21%;
+  width: 23%;
   height: 100%;
   position:fixed;
   right:0;
@@ -96,7 +96,7 @@ button:focus-visible {
 }
 
 .retangulo_out {
-  width: 21%;
+  width: 23%;
   height: 100%;
   position:fixed;
   right:0;
@@ -106,6 +106,10 @@ button:focus-visible {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   transform: translateX(100%);
+}@media(max-width:1366px){
+  .retangulo_in {width: 21%;
+}
+ .retangulo_out{width:21%}
 }
 
 @keyframes enter {
