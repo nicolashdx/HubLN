@@ -17,13 +17,13 @@ function General(){
     const rec_in = {
         transform: 'rotateY(0)',
         transformOrigin: 'right center',
-        transition: 'all .5s',
+        transition: 'all .6s',
     };
 
     const rec_out = {
         transform: 'rotateY(-90deg)',
         transformOrigin: 'right center',
-        transition: 'all .5s',
+        transition: 'all .6s',
     };
 
     return(
