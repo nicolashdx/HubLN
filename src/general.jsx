@@ -15,17 +15,15 @@ function General(){
     const [sidebar, setsidebar] = useState(false); 
     
     const rec_in = {
-        animationName: 'enter',
-        animationDuration: '0.5s',
-        animationFillMode: 'forwards',
-        transform: 'translateX(0%)'
+        transform: 'rotateY(0)',
+        transformOrigin: 'right center',
+        transition: 'all .5s',
     };
 
     const rec_out = {
-        animationName: 'exit',
-        animationDuration: '0.5s',
-        animationFillMode: 'forwards',
-        transform: 'translateX(100%)'
+        transform: 'rotateY(-90deg)',
+        transformOrigin: 'right center',
+        transition: 'all .5s',
     };
 
     return(
