@@ -14,12 +14,8 @@ function GradePlanner({setNav}) {
       <div className='contentGP'>
         <div className='upperparts'> 
           <input></input>
-          <div className='inputbox'>
-            <input
-            type="text"
-            required="required"/>
-            <span>Materias</span>
-          </div>
+          <select
+          /><span>Disciplinas</span>
           <div className='totalhoras'>
             <p> Horas totais:</p>
             <p className='horas'></p>
