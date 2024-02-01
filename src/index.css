@@ -106,10 +106,12 @@ button:focus-visible {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   transform: translateX(100%);
-}@media(max-width:1366px){
+}
+@media(max-width:1366px){
   .retangulo_in {width: 21%;
 }
- .retangulo_out{width:21%}
+ .retangulo_out{width:21%;
+}
 }
 
 @keyframes enter {
