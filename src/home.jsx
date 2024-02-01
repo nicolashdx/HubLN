@@ -8,11 +8,10 @@ import { IoChatbubble } from "react-icons/io5";
 
 import './home.css'
 
-function Home() {
-
+function Home({setNav}) {
+  setNav(false)
   return (
     <>
-      <div className='retangulo_out'></div>
       <div className='content'>
         <div>
             <p className='welcome'>BEM <br></br> VINDOS!</p>

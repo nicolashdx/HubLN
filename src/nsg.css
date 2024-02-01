@@ -1,13 +1,9 @@
-.content {
-    display: flex;
-    flex-direction: row;
-}
-
 
 .contentNsg { 
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+    align-items: center;
 }
 .contentNsg >*{ /* opacidade dos elementos do container*/
     opacity: 1 ;
@@ -40,24 +36,8 @@ input:focus, input:focus-visible {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-inline: 5%;
-    margin-bottom: 5%;
-    margin-inline: 15%;
-    margin-left: 0;
-}
-
-.indiv >p{
     height: fit-content;
 }
-
-.indiv>button{
-    width: 13%;
-    height: min-content;
-    padding: 3%;
-    margin: 0;
-}
-
-
 
 .listDiscp{
     background-color: rgba(11, 108, 255, 0.5);
@@ -79,7 +59,6 @@ input:focus, input:focus-visible {
     border-radius: 80px;
     
 }
-
 
 li{ 
    /* padding-inline: 2%;*/

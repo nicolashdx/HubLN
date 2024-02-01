@@ -6,14 +6,14 @@ import { IoChatbubble } from "react-icons/io5";
 
 import './navbar.css'
 
-function Navbar() {
+function Navbar({setNav}) {
   return (
     <nav>
       <ul className='return'>
         <li>
           <Link to="/">
             <a className='icon' href="">
-              <FaArrowLeft />
+              <FaArrowLeft className='icon'/>
             </a>
           </Link>
         </li>

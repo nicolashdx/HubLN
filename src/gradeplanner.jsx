@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 import './gradeplanner.css'
 
 
-function GradePlanner() {
+function GradePlanner({setNav}) {
+  setNav(true);
   return (
     <>
-      <div className='retangulo_in'></div>
       <div className='contentGP'>
         <div className='upperparts'> 
           <input></input>
@@ -21,7 +21,6 @@ function GradePlanner() {
             <p className='horas'></p>
           </div>
         </div>
-        <Navbar />
       </div>
     </>
   )
