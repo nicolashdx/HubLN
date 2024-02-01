@@ -9,8 +9,8 @@
         border-radius: 70px;
         box-shadow: 0 0 10px rgba(190, 165, 165, 0.3); /* Sombra do container */
         justify-content: center;
-        min-width: 950px ;
-       
+        min-width: 950px;
+        height: 508px;
     }@media (max-width:1366px){
         .container{
             min-width: 950px;   
