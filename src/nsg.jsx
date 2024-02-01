@@ -7,7 +7,7 @@ import { CiCircleRemove } from "react-icons/ci";
 
 import './nsg.css'
 
-function NSG() {
+function NSG({setNav}) {
   const [disciplinas, set_disciplinas] = useState([]);
   const [nsg_value, set_nsg_value] = useState('');
   const [conceito_value, set_conceito_value] = useState('')
@@ -85,16 +85,10 @@ function NSG() {
     calc_nsg()
   }, [disciplinas])
 
-  const retangulo_in = {
-    color: 'red',
-    fontSize: '16px',
-    // outros estilos
-  };
-
+  setNav(true)
 
   return (
     <>
-      <div className='content'>
         <div className='contentNsg'>
           <p className='titulo'>Cálculo de NSG</p>
           <div className='indiv'>
@@ -129,10 +123,6 @@ function NSG() {
             <p className='conceitoResult'>{(conceito_value != '') ? conceito_value : '-'}</p>
           </div>
           </div>
-          <div>
-            <Navbar/>
-          </div>
-      </div>
     </>
   )
 }

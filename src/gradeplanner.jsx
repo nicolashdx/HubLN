@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 import './gradeplanner.css'
 
 
-function GradePlanner() {
+function GradePlanner({setNav}) {
+  setNav(true);
   return (
     <>
-      <div className='retangulo_in'></div>
       <div className='contentGP'>
         <div className='upperparts'> 
           <input></input>
@@ -18,13 +18,13 @@ function GradePlanner() {
             <input
             type="text"
             required="required"/>
+            <span>Materias</span>
           </div>
           <div className='totalhoras'>
             <p> Horas totais:</p>
             <p className='horas'></p>
           </div>
         </div>
-        <Navbar />
       </div>
     </>
   )

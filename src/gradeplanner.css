@@ -21,9 +21,9 @@ input{
     height:100%;
     outline:none;
 }
-/*.inputbox span{
+.inputbox span{
     color:aquamarine;
-}*/
+}
 .totalhoras{
     margin-top: 0;
     width: 150px;

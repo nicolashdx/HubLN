@@ -9,7 +9,8 @@ const localizer = momentLocalizer(moment)
 
 import './test.css'
 
-function Test() {
+function Test({setNav}) {
+  setNav(true)
   return (
     <>
       <div className='contentTest'>
