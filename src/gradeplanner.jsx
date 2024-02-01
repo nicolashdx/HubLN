@@ -12,19 +12,18 @@ function GradePlanner() {
     <>
       <div className='retangulo_in'></div>
       <div className='container'>
-        <div className='upperparts'>
-        <div className='inputbox'>
-        <input
-         type="text"
-         required="required"/>
-         <span>materias</span>
-          </div>
+        <div className='upperparts'> 
           <input></input>
+          <div className='inputbox'>
+            <input
+            type="text"
+            required="required"/>
+          </div>
           <div className='totalhoras'>
             <p> Horas totais:</p>
             <p className='horas'></p>
           </div>
-          </div>
+        </div>
         <Navbar />
       </div>
     </>
