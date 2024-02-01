@@ -31,10 +31,12 @@
   justify-content: center;
   min-width: 950px;
   height: 508px;
-}@media (max-width:1366px){
+}
+@media (max-width:1366px){
   .container{
-      min-width: 950px;   
-       min-height:485.3px;} 
+    min-width: 950px;   
+    min-height:485.3px;
+  } 
 }
 
 a {
