@@ -14,11 +14,8 @@ function GradePlanner() {
       <div className='contentGP'>
         <div className='upperparts'> 
           <input></input>
-          <div className='inputbox'>
-            <input
-            type="text"
-            required="required"/>
-          </div>
+          <select
+          /><span>Disciplinas</span>
           <div className='totalhoras'>
             <p> Horas totais:</p>
             <p className='horas'></p>
