@@ -83,7 +83,7 @@ button:focus-visible {
 }
 
 .retangulo_in{
-  width: 23%;
+  width: 30%;
   height: 100%;
   position:fixed;
   right:0;
@@ -96,7 +96,7 @@ button:focus-visible {
 }
 
 .retangulo_out {
-  width: 23%;
+  width: 30%;
   height: 100%;
   position:fixed;
   right:0;
