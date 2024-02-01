@@ -1,10 +1,10 @@
-
 .contentNsg { 
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
+
 .contentNsg >*{ /* opacidade dos elementos do container*/
     opacity: 1 ;
 }
@@ -12,18 +12,17 @@
 .titulo{
   font-size:58px ;
   font-weight: 800;
-  margin-top: 30px;
-  margin-bottom: 3%;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin-block: 3%;
 }
 
 input, select{
     background-color: rgba(11, 108, 255, 0.5);
     border-radius: 50px;
     border-color: transparent;
-    width: 20%;
+    width: 100%;
 }
+
+
 input::placeholder{
     color: #fff;
 }
@@ -41,7 +40,6 @@ input:focus, input:focus-visible {
 
 .listDiscp{
     background-color: rgba(11, 108, 255, 0.5);
-    margin-inline: 26%;
     /*justify-content: space-between;*/
     border-radius: 35px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
@@ -61,7 +59,6 @@ input:focus, input:focus-visible {
 }
 
 li{ 
-   /* padding-inline: 2%;*/
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
