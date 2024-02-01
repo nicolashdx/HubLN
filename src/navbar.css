@@ -3,16 +3,12 @@ nav{
     display: flex-block;
     flex-direction: column;
     align-items: space-between;
-    /*background-color: yellow;
-    background-color: rgba(11, 108, 255, 0.5);*/
     border-top-right-radius: 70px;
     border-bottom-right-radius: 70px;
     font-size: 32px;
 
     height: 100%;
-    margin-left: 20px;
-    
-    
+    padding-left: 55%;
 }
 
 nav > *{
@@ -20,16 +16,15 @@ nav > *{
 }
 
 .return {
-    margin-top: 30px;
-    margin-bottom: 27vh;
+    margin-top: 40px;
+    margin-bottom: 30vh;
 }
 
 .navigation {
     list-style-type: none;
     margin: 0;
-    /*padding-inline: 20px;*/
 }
 
 a.icon {
-    color: black;
+    color: #ffe68f;
 }
