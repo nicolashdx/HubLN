@@ -30,8 +30,8 @@ function Home({setNav}) {
         </div>
         <div className='buttons'>
             <Link to="/nsg"><button>Cálculo de NSG</button></Link>
-            <Link to="/grade"><button>Montar Grade</button></Link>
-            <Link to="/test"><button>Em breve</button></Link>
+            <Link to="/"><button>Montar Grade</button></Link>
+            <Link to="/"><button>Em breve</button></Link>
         </div>
       </div>
     </>
