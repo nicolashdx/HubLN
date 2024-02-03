@@ -23,7 +23,7 @@ function General(){
     const rec_out = {
         transform: 'rotateY(-90deg)',
         transformOrigin: 'right center',
-        transition: 'all .6s',
+        transition: 'all .8s',
     };
 
     return(
